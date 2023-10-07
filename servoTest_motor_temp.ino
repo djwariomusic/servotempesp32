@@ -17,8 +17,11 @@
 
 BME280 mySensor; // Declaración de mySensor para conexión del sensor BME280 a través de I2C
 
-const char* ssid = "UC3M-LABS"; //conectar tarjetaESP32 y PC a la misma red
-const char* password =  "Uc3M.L4b.2020"; //conectar tarjetaESP32 y PC a la misma red
+// const char* ssid = "UC3M-LABS"; //conectar tarjetaESP32 y PC a la misma red
+// const char* password =  "Uc3M.L4b.2020"; //conectar tarjetaESP32 y PC a la misma red
+
+const char* ssid = "LAPTOP-6EJ2NT4I 0425"; //conectar tarjetaESP32 y PC a la misma red
+const char* password =  "16Y{22l8"; //conectar tarjetaESP32 y PC a la misma red
 
 //const char* ssid = "Mario's Galaxy Note20 Ultra"; //conectar tarjetaESP32 y PC a la misma red
 //const char* password =  ""; //conectar tarjetaESP32 y PC a la misma red
@@ -27,15 +30,11 @@ WiFiServer server(80);
 
 #define PIN_SERVO 4 // Declarión OUTPIN para escritura sobre el servomotor
 
-
 void setup()
 {
   Serial.begin(230400);
   //Modo y escritura servomotor
   pinMode(PIN_SERVO, OUTPUT);
-
-  //variable local temperatura
-  int temp;
 
   // Wifi Setup
   WiFi.begin(ssid, password);
