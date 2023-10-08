@@ -23,9 +23,6 @@ BME280 mySensor; // Declaración de mySensor para conexión del sensor BME280 a 
 const char* ssid = "LAPTOP-6EJ2NT4I 0425"; //conectar tarjetaESP32 y PC a la misma red
 const char* password =  "16Y{22l8"; //conectar tarjetaESP32 y PC a la misma red
 
-//const char* ssid = "Mario's Galaxy Note20 Ultra"; //conectar tarjetaESP32 y PC a la misma red
-//const char* password =  ""; //conectar tarjetaESP32 y PC a la misma red
-
 WiFiServer server(80);
 
 #define PIN_SERVO 4 // Declarión OUTPIN para escritura sobre el servomotor
